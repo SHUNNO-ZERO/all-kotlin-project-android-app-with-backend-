@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vchamps.android.staffast.ProfessionalsCalc"
+    android:background="@color/colorPrimary">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineVertical1"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineVertical2"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineHorizontal"
+        app:layout_constraintGuide_begin="87dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="87dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/imgRate"
+        android:layout_width="@dimen/rates_icon_size"
+        android:layout_height="@dimen/rates_icon_size"
+        app:srcCompat="@drawable/icon_rates"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical1"
+        />
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/imgSchedule"
+        android:layout_width="@dimen/rates_icon_size"
+        android:layout_height="@dimen/rates_icon_size"
+        app:srcCompat="@drawable/icon_schedule"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgRate"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical1"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/imgPayout"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical1"
+        app:srcCompat="@drawable/icon_payout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgSchedule"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/tvRate"
+        style="@style/fontRateScreenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Industry Leading Rates"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal" />
+
+    <TextView
+        android:id="@+id/tvSchedule"
+        style="@style/fontRateScreenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Flexible Schedule"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="@+id/tvRate" />
+
+    <TextView
+        android:id="@+id/tvPayout"
+        style="@style/fontRateScreenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Quick and Easy Payout"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="@+id/tvSchedule" />
+
+    <Button
+        android:id="@+id/btnWork"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="CLICK ME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
